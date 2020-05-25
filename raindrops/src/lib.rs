@@ -1,4 +1,17 @@
 pub fn raindrops(n: u32) -> String {
-    let s = String::with_capacity(100);
-    if n % 3 == 0 
+    let mut s = String::with_capacity(100);
+
+    if n % 3 == 0 {
+        s.push_str("Pling");
+    }
+    if n % 5 == 0 {
+        s.push_str("Plang");
+    }
+    if n % 7 == 0 {
+        s.push_str("Plong");
+    }
+    if s.is_empty() {
+        s.push_str(&n.to_string());
+    }
+    s
 }
