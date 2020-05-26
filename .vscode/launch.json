@@ -8,7 +8,7 @@
             "name": "Rust launch",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/target/debug/nth_prime"
+            "program": "${workspaceFolder}/nth-prime/target/debug/nth_prime"
         },
     ]
 }

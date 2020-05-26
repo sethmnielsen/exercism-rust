@@ -15,7 +15,7 @@ pub fn nth(n: u32) -> u32 {
     else {
         // the value that will be incremented to test for prime-ness
         let mut x: u32 = primes.last().unwrap().clone();
-        while primes.len() < n {
+        while primes.len() <= n {
             x += 2;
             let sq = (x as f32).sqrt().trunc() as u32;
             let mut is_prime = false;
